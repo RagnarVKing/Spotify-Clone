@@ -457,22 +457,18 @@ public final class Admin {
                 playlist.decreaseFollowers();
             }
 
-
-                for (Playlist playlist : getPlaylists()) {
-                    if (playlist.matchesOwner(user.getUsername())) {
-                        for (Song song : playlist.getSongs()) {
-                            songs.remove(getSong(song.getName()));
-                        }
+            for (Playlist playlist : getPlaylists()) {
+                if (playlist.matchesOwner(user.getUsername())) {
+                    for (Song song : playlist.getSongs()) {
+                        songs.remove(getSong(song.getName()));
                     }
                 }
+            }
 
-
-            //chatgpt
             for (User user1 : users) {
                 user1.getFollowedPlaylists().removeIf(playlist ->
                         playlist.getOwner().equals(user.getUsername()));
             }
-            //chatgpt
             users.remove(user);
             return username + " was successfully deleted.";
         }

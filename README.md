@@ -1,20 +1,89 @@
-# Proiect GlobalWaves  - Etapa 2
+**Nume:Eftenie Andrei-Vlad**
+**Grupă:323CA**
 
-<div align="center"><img src="https://tenor.com/view/listening-to-music-spongebob-gif-8009182.gif" width="300px"></div>
+## GlobalWaves - Pagination ~ TEMA2
 
-#### Assignment Link: [https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/proiect/etapa1](https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/proiect/etapa1)
+### Descriere:
+
+* Scurtă descriere a funcționalității temei
+
+User Types:
+
+    Normal User:
+        Can like songs and playlists.
+        Can switch between online and offline modes.
+        Accessible commands: search, select, load, playPause, repeat, shuffle, forward, backward, like, next, prev, createPlaylist, addRemoveInPlaylist, switchVisibility, follow, changePage, printCurrentPage.
+
+    Artist:
+        Can add albums and events.
+        Has a dedicated page showcasing albums, merchandise, and events.
+        Accessible commands: addAlbum, removeAlbum, addEvent, removeEvent, addMerch.
+
+    Host:
+        Can add podcasts and announcements.
+        Has a dedicated page showcasing podcasts and announcements.
+        Accessible commands: addPodcast, removePodcast, addAnnouncement, removeAnnouncement.
+
+Page Navigation Commands:
+
+    Change Page:
+        Can change the page between Home and LikedContent
+
+    Print Current Page:
+        Displays the content of the current page based on the user type.
+
+Music Player Commands:
+
+    Select, Load, PlayPause, Repeat, Shuffle, Forward, Backward, Like, Next, Prev:
+        Functionalities available for both albums and playlists.
+
+Admin Commands:
+
+    Add User:
+        Adds a user, artist or host.
+
+    Delete User:
+        Deletes a user, artist or host.
+
+    Show Albums:
+        Displays all albums of a specified artist.
+
+    Show Podcasts:
+        Displays all podcasts of a specified host.
+
+Statistics:
+
+    Get Top 5 Albums:
+        Displays the top 5 albums based on likes.
+
+    Get Top 5 Artists:
+        Displays the top 5 artists based on likes.
+
+    Get All Users:
+        Displays all users in the application.
+
+    Get Online Users:
+        Displays online normal users.
+
+Search Bar:
+
+    Search:
+        Provides the ability to search for albums, artists, and hosts.
+
+General Notes:
+
+    Timestamp:
+        Represents the execution time of commands.
+
+    Offline Mode:
+        Users can switch between online and offline modes.
+
+    Collections:
+        Introduces the concept of albums (artist-created collections of songs).
 
 
-## Skel Structure
+### Comentarii asupra temei:
 
-* src/
-  * checker/ - checker files
-  * fileio/ - contains classes used to read data from the json files
-  * main/
-      * Main - the Main class runs the checker on your implementation. Add the entry point to your implementation in it. Run Main to test your implementation from the IDE or from command line.
-      * Test - run the main method from Test class with the name of the input file from the command line and the result will be written
-        to the out.txt file. Thus, you can compare this result with ref.
-* input/ - contains the tests and library in JSON format
-* ref/ - contains all reference output for the tests in JSON format
+* CHATGPT
 
-<div align="center"><img src="https://tenor.com/view/homework-time-gif-24854817.gif" width="500px"></div>
+Am folosit chat gpt pentru expresiile lambda din cod
