@@ -110,8 +110,8 @@ public final class Artist extends User {
                     if (user1.getPlayer().getSource() != null) {
                         if (user1.getPlayer().getSource().getType()
                                 == Enums.PlayerSourceType.PLAYLIST) {
-                            for (Song song1 : ((Playlist)user1.getPlayer()
-                                            .getSource().getAudioCollection()).getSongs()) {
+                            for (Song song1 : ((Playlist) user1.getPlayer().getSource()
+                                    .getAudioCollection()).getSongs()) {
                                 if (song1.matchesAlbum(name)) {
                                     return username + " can't delete this album.";
                                 }
@@ -121,7 +121,8 @@ public final class Artist extends User {
                 }
 
                 for (Song song : album.getSongs()) {
-                    Admin.getInstance().getAllSongs().remove(Admin.getInstance().getSong(song.getName()));
+                    Admin.getInstance().getAllSongs()
+                            .remove(Admin.getInstance().getSong(song.getName()));
                     for (User user1 : Admin.getInstance().getUsers()) {
                         user1.getLikedSongs().remove(user1.getLikedSong(song.getName()));
                     }

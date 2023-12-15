@@ -8,7 +8,7 @@ public class LibraryHost extends LibraryEntry {
      *
      * @param name the name
      */
-    public LibraryHost(String name) {
+    public LibraryHost(final String name) {
         super(name);
     }
 }

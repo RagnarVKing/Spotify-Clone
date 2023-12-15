@@ -13,11 +13,9 @@ import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import fileio.input.UserInput;
-import org.checkerframework.checker.units.qual.A;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -37,6 +35,13 @@ public final class Admin {
     private Admin() {
     }
 
+    /**
+     * gets the instance of admin
+     *
+     * singleton
+     *
+     * @return the admin
+     */
     public static Admin getInstance() {
         if (instance == null) {
             synchronized (Admin.class) {
@@ -364,7 +369,8 @@ public final class Admin {
      * @param type
      * @return the message
      */
-    public String addUser(final String username, final  Integer age, final String city, final String type) {
+    public String addUser(final String username, final  Integer age,
+                          final String city, final String type) {
         for (User user : users) {
             if (user.getUsername().equals(username)) {
                 return "The username " + username + " is already taken.";
@@ -486,8 +492,10 @@ public final class Admin {
             }
             for (User user1 : users) {
                 if (user1.getPlayer().getSource() != null) {
-                    if (user1.getPlayer().getSource().getType() == Enums.PlayerSourceType.PLAYLIST) {
-                        for (Song song1 : ((Playlist)user1.getPlayer().getSource().getAudioCollection()).getSongs()) {
+                    if (user1.getPlayer().getSource().getType()
+                            == Enums.PlayerSourceType.PLAYLIST) {
+                        for (Song song1 : ((Playlist) user1.getPlayer()
+                                .getSource().getAudioCollection()).getSongs()) {
                             if (song1.matchesArtist(artist.getUsername())) {
                                 return username + " can't be deleted.";
                             }

@@ -4,17 +4,22 @@ import app.audio.Collections.Playlist;
 import app.audio.Files.Song;
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 
 public class LikedContentPage implements Page {
     private ArrayList<Song> likedSongs;
     private ArrayList<Playlist> followedPlaylists;
 
-    public LikedContentPage(final ArrayList<Song> likedSongs, final ArrayList<Playlist> followedPlaylists) {
+    public LikedContentPage(final ArrayList<Song> likedSongs,
+                            final ArrayList<Playlist> followedPlaylists) {
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
     }
+
+    /**
+     * prints the liked content page
+     *
+     * @return the page
+     */
     @Override
     public String printCurrentPage() {
         String message = "Liked songs:\n\t[";

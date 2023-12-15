@@ -8,7 +8,7 @@ public class LibraryArtist extends LibraryEntry {
      *
      * @param name the name
      */
-    public LibraryArtist(String name) {
+    public LibraryArtist(final String name) {
         super(name);
     }
 }

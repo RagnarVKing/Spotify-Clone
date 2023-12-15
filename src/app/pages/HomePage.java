@@ -16,6 +16,12 @@ public class HomePage implements Page {
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
     }
+
+    /**
+     * prints the home page
+     *
+     * @return the page
+     */
     @Override
     public String printCurrentPage() {
         String message = "Liked songs:\n\t[";

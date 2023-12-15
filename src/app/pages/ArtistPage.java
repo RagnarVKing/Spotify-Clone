@@ -1,26 +1,29 @@
 package app.pages;
 
 import app.audio.Collections.Album;
-import app.audio.Collections.Playlist;
 import app.audio.Files.Event;
 import app.audio.Files.Merch;
-import app.audio.Files.Song;
-import lombok.Getter;
+
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 
 public class ArtistPage implements Page {
     private ArrayList<Album> albums;
     private ArrayList<Event> events;
     private ArrayList<Merch> merches;
 
-    public ArtistPage(final ArrayList<Album> albums, final ArrayList<Merch> merches, final ArrayList<Event> events) {
+    public ArtistPage(final ArrayList<Album> albums, final ArrayList<Merch> merches,
+                      final ArrayList<Event> events) {
         this.albums = albums;
         this.merches = merches;
         this.events = events;
     }
+
+    /**
+     * prints the artist page
+     *
+     * @return the page
+     */
     @Override
     public String printCurrentPage() {
         String message = "Albums:\n\t[";
