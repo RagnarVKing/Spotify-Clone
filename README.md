@@ -1,7 +1,6 @@
 **Nume:Eftenie Andrei-Vlad**
-**Grupă:323CA**
 
-## GlobalWaves - Pagination ~ TEMA2
+## GlobalWaves - Pagination ~ Etapa2
 
 ### Descriere:
 
@@ -81,9 +80,3 @@ General Notes:
     Collections:
         Introduces the concept of albums (artist-created collections of songs).
 
-
-### Comentarii asupra temei:
-
-* CHATGPT
-
-Am folosit chat gpt pentru expresiile lambda din cod
